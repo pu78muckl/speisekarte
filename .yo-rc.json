@@ -1,0 +1,33 @@
+{
+    "generator-jhipster": {
+        "promptValues": {
+            "packageName": "com.spirittesting.speisekarte"
+        },
+        "jhipsterVersion": "5.7.2",
+        "applicationType": "monolith",
+        "baseName": "Speisekarte",
+        "packageName": "com.spirittesting.speisekarte",
+        "packageFolder": "com/spirittesting/speisekarte",
+        "serverPort": "8080",
+        "authenticationType": "jwt",
+        "cacheProvider": "no",
+        "enableHibernateCache": false,
+        "websocket": false,
+        "databaseType": "mongodb",
+        "devDatabaseType": "mongodb",
+        "prodDatabaseType": "mongodb",
+        "searchEngine": false,
+        "messageBroker": false,
+        "serviceDiscoveryType": false,
+        "buildTool": "maven",
+        "enableSwaggerCodegen": false,
+        "jwtSecretKey": "M2VjMTNiMTRmNWI0M2NhNjhiYThhOGQ3ZGIzNjA1MjRlMjUwZmE3OWNhMjk4NDI2NTU5YjY3OTgwNDAzZjJiOWUwMjIxNjdiMGU4NmZmNDgyNGJkYzM0ZGQ2ZGExMjYxMmQwODRkNWQ2NjZlMmZmMDE5N2JjM2NkYTEwMTQzMmE=",
+        "clientFramework": "angularX",
+        "useSass": true,
+        "clientPackageManager": "npm",
+        "testFrameworks": [],
+        "jhiPrefix": "jhi",
+        "otherModules": [],
+        "enableTranslation": false
+    }
+}
