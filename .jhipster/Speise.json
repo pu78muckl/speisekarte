@@ -1,0 +1,53 @@
+{
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "relationships": [
+        {
+            "relationshipName": "kunde",
+            "otherEntityName": "id",
+            "relationshipType": "one-to-one",
+            "ownerSide": false,
+            "otherEntityRelationshipName": "speise"
+        },
+        {
+            "relationshipName": "speisekarte",
+            "otherEntityName": "speisekarte",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "bezeichnung",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "preis",
+            "fieldType": "Float",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "beschreibung",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "kundenid",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "speisekartenid",
+            "fieldType": "String"
+        }
+    ],
+    "dto": "no",
+    "searchEngine": false,
+    "service": "serviceClass",
+    "entityTableName": "speise",
+    "jpaMetamodelFiltering": false,
+    "pagination": "no"
+}

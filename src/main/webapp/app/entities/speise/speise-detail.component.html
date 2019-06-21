@@ -1,0 +1,49 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="speise">
+            <h2><span>Speise</span> {{speise.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span>Bezeichnung</span></dt>
+                <dd>
+                    <span>{{speise.bezeichnung}}</span>
+                </dd>
+                <dt><span>Preis</span></dt>
+                <dd>
+                    <span>{{speise.preis}}</span>
+                </dd>
+                <dt><span>Beschreibung</span></dt>
+                <dd>
+                    <span>{{speise.beschreibung}}</span>
+                </dd>
+                <dt><span>Kundenid</span></dt>
+                <dd>
+                    <span>{{speise.kundenid}}</span>
+                </dd>
+                <dt><span>Speisekartenid</span></dt>
+                <dd>
+                    <span>{{speise.speisekartenid}}</span>
+                </dd>
+                <dt><span>Speisekarte</span></dt>
+                <dd>
+                    <div *ngIf="speise.speisekarte">
+                        <a [routerLink]="['/speisekarte', speise.speisekarte?.id, 'view']">{{speise.speisekarte?.id}}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/speise', speise.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>
